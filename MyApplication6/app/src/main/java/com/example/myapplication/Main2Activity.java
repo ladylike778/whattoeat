@@ -30,7 +30,6 @@ public class Main2Activity extends AppCompatActivity {
 
 
         abcd=getIntent().getStringArrayListExtra("foods");
-//        abcd.add(getSharedPreferences("test",MODE_PRIVATE).getString("food",""));
         listView = (ListView) findViewById(R.id.listView);
         listAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,abcd);
         listView.setAdapter(listAdapter);
